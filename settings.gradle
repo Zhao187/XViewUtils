@@ -1,0 +1,3 @@
+rootProject.name='XViewUtils'
+include ':app'
+include ':library'
