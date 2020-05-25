@@ -2,7 +2,7 @@
 <h1 align="center">Welcome to XViewUtils 👋</h1>
 
 ### 🏠 [Homepage](https://jitpack.io/#Zhao187/XViewUtils/1.0.0)
-### ✨ [Demo](https://github.com/Zhao187/XViewUtils/)
+### ✨ [Demo](https://github.com/Zhao187/XViewUtils/tree/master/app)
 ## Install
 
 ```groovy
