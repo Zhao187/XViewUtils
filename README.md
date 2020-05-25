@@ -1,8 +1,8 @@
 
 <h1 align="center">Welcome to XViewUtils 👋</h1>
 
-### 🏠 [Homepage](https://github.com/Zhao187/TPermission)
-### ✨ [Demo](https://github.com/Zhao187/TPermission/tree/1.0.0/app)
+### 🏠 [Homepage](https://jitpack.io/#Zhao187/XViewUtils/1.0.0)
+### ✨ [Demo](https://github.com/Zhao187/XViewUtils/)
 ## Install
 
 ```groovy
@@ -50,8 +50,7 @@ dependencies {
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](<%= issuesUrl %>). <%= contributingUrl ? `You can also take a look at the [contributing guide](${contributingUrl}).` : '' %>
-<% } -%>
+Contributions, issues and feature requests are welcome!<br />Feel free to check `You can also take a look at the [contributing guide]
 
 ## Show your support
 
