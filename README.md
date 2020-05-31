@@ -41,7 +41,7 @@ dependencies {
  //View注入
   XViewUtils.instance().inject(view);
   
- //Fragment注入
+ //Fragment注入或者Activity注入
   XViewUtils.instance().inject(this);
 ```
 
