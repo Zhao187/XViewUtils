@@ -15,7 +15,7 @@ Step 1. Add the JitPack repository to your build file
 	}
 Step 2. Add the dependency
 dependencies {
-	 implementation 'com.github.Zhao187:XViewUtils:1.0.0'
+	 implementation 'com.github.Zhao187:XViewUtils:1.0.1'
 }
 ```
 ## Usage
@@ -32,6 +32,12 @@ dependencies {
     {
       
     }
+     
+    @OnClick({R.id.btn_fragemt,R.id.btn_view})
+    public void onFragmentClick(View view)
+    {
+    }
+   
  //View注入
   XViewUtils.instance().inject(view);
   
