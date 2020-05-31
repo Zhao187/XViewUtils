@@ -31,15 +31,20 @@ public class MainActivity extends Activity {
         tvTitle.setText("hello world");
     }
 
-    @OnClick(R.id.btn_fragemt)
+    @OnClick({R.id.btn_fragemt,R.id.btn_view})
     public void onFragmentClick(View view)
     {
-        startActivity(new Intent(this,TestActivity.class));
-    }
+        switch (view.getId())
+        {
+            case R.id.btn_fragemt:
+                startActivity(new Intent(this,TestActivity.class));
+                break;
+            case R.id.btn_view:
+                startActivity(new Intent(this,NavActivity.class));
+                break;
+            default:
+                break;
+        }
 
-    @OnClick(R.id.btn_view)
-    public void onViewClick(View view)
-    {
-        startActivity(new Intent(this,NavActivity.class));
     }
 }

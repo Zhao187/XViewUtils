@@ -1,5 +1,9 @@
 apply plugin: 'com.android.library'
 
+//添加下面两行
+apply plugin: 'com.github.dcendents.android-maven'
+//这里 LoveLifeEveryday 改为你的 github 账号名，我的是：LoveLifeEveryday
+group='com.github.Zhao187'
 android {
     compileSdkVersion 28
 

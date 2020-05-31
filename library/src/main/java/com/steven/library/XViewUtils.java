@@ -129,32 +129,34 @@ public class XViewUtils implements ViewInjector{
                 /*
                  * 获取注解中的值
                  * */
-                final int resId = onClick.value();
+                final int[] viewIds = onClick.value();
 
-                /*
-                 * 获取resId中的view
-                 * */
-                final View view = viewFinder.findViewById(resId);
+                for (int resId : viewIds) {
+                    /*
+                     * 获取resId中的view
+                     * */
+                    final View view = viewFinder.findViewById(resId);
 
-                /*
-                 * 给当前view绑定点击事件
-                 * */
-                view.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        /*
-                         * 8.通过反射调用户的方法
-                         * */
-                        declaredMethod.setAccessible(true);
-                        try {
-                            declaredMethod.invoke(handle, view);
-                        } catch (IllegalAccessException e) {
-                            e.printStackTrace();
-                        } catch (InvocationTargetException e) {
-                            e.printStackTrace();
+                    /*
+                     * 给当前view绑定点击事件
+                     * */
+                    view.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            /*
+                             * 8.通过反射调用户的方法
+                             * */
+                            declaredMethod.setAccessible(true);
+                            try {
+                                declaredMethod.invoke(handle, view);
+                            } catch (IllegalAccessException e) {
+                                e.printStackTrace();
+                            } catch (InvocationTargetException e) {
+                                e.printStackTrace();
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
         }
     }
